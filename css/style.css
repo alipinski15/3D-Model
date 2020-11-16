@@ -134,10 +134,11 @@ body {
   cursor: pointer;
 }
 
-/* .caption-statue {
+.caption-statue {
   background-color: #fefefe;
-  margin: auto;
+  position: relative;
+  margin: 40% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-} */
+}
