@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Model Practice</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/3D-Model/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="/3D-Model/css/style.css" type="text/css">
+</head>
+<body>
+  <model-viewer id="model" 
+                camera-controls 
+                camera-orbit="45deg 55deg" 
+                shadow-intensity="3" 
+                shadow-softness="0" 
+                src="assets/StatueOfLiberty.gltf" 
+                alt="StatueOfLiberty">
+    <button id="head" 
+            onclick="hotspotHead()" 
+            slot="hotspot-head" 
+            data-position="0.015672344383056425m  0.328249658549183m  0.023045327482042945m" 
+            data-normal="0.25842396024159686m  0.6952109186960239m  0.6707449852953654m">
+      <div id="annotation-head" src="assets/observationdeck.jpg">
+        <span class="close">&times;</span>
+          <div class="caption-head">Once inside the Statue of Liberty, you can explore the museum in the pedestal and then begin the climb to the crown. The climb itself is strenuous – 354 steps, equivalent to 20 stories – and recommended only for people in good physical health.</div>
+      </div>
+    </button>
+    <button id="flame" 
+            onclick="hotspotFlame()"
+            slot="hotspot-flame" 
+            data-position="-0.023355448706402614m 0.4535688770113514m 0.05233795857961884m" 
+            data-normal="0.24275376662669357m -0.06822864058855609m 0.967685621155957m">
+      <div id="annotation-flame">
+        <span class="close">&times;</span>
+          <div class="caption-flame">The torch is a symbol of enlightenment. The Statue of Liberty's torch lights the way to freedom showing us the path to Liberty. </div>
+      </div>
+    </button>
+    <button id="statue" 
+            onclick="hotspotStatue()"
+            slot="hotspot-statue" 
+            data-position="0.013992832169111222m 0.21074560939466747m 0.04209143488631367m" 
+            data-normal="0.0172683683762854m 0.038155912433316896m 0.9991225799670439m">
+      <div id="annotation-statue">
+        <span class="close">&times;</span>
+      </div>
+    </button>
+  </model-viewer>
+  
+<script src="js/script.js"></script>
+</body>
+</html>

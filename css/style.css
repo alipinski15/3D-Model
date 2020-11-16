@@ -1,0 +1,143 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #4b7bbb;
+}
+
+#model {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*** Hotspot Head ***/
+
+#head {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+}
+
+#head[slot="hotspot-head"]{
+  --min-hotspot-opacity: 0;
+  background-color: red;
+}
+
+#annotation-head{
+  background-color: #888888;
+  background-image: url("/3D-Model/assets/observationdeck.png");
+  background-repeat: no-repeat;
+  width: 580px;
+  height: 470px;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+.caption-head {
+  color: white;
+  position: relative;
+  margin: 410px auto
+}
+
+/** Hotspot Flame **/
+
+#flame{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  box-sizing: border-box;
+}
+
+#flame[slot="hotspot-flame"]{
+  --min-hotspot-opacity: 0;
+  background-color: red;
+}
+
+#annotation-flame{
+  background-color: #888888;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+.caption-flame {
+  color: white;
+  position: relative;
+  margin: 5px auto
+}
+
+/** Hotspot Statue **/
+
+#statue{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  box-sizing: border-box;
+}
+
+#statue[slot="hotspot-statue"]{
+  --min-hotspot-opacity: 0;
+  background-color: red;
+}
+
+#annotation-statue{
+  background-color: #888888;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+.close {
+  color: #aaaaaa;
+  position: relative;
+  margin: -10px;
+  padding: 0px 5px 10px 10px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* .caption-statue {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+} */
